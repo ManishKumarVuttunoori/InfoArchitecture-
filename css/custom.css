@@ -159,7 +159,7 @@ a.slider {
     word-break: break-all;
     }
 }
-
+/* Carousel team related css data*/
 [class*="span"] {
   float: left;
   min-height: 1px;
@@ -205,3 +205,4 @@ li {
   margin-bottom: 20px;
   margin-left: 15px;
 }
+/*Carousel team related code ends....!*/
