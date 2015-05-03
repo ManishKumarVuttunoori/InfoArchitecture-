@@ -13,12 +13,21 @@
 		<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 
 		<!--css reference links go here-->
+
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/custom.css" rel="stylesheet">
 		<!--javascript goes here-->
 		<script src="js/respond.js"></script>
+		<!-- Carousel Auto-Cycle-->
+	<script>	
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 6000
+    })
+  });
+  </script>
 	</head>
-	<body>
+	<body class="back" >
 		
 	  <nav id="header" class="navbar navbar-default navbar-fixed-top  nav-color">
       <div class="container">
@@ -122,27 +131,130 @@
 
 	
 	<br>
-	<section id="Team" class="container">
-	<br>
-	<br>
-	<header><h2>Openwords Team</h2></header>
-	<!--HOW ARE THE IMAGES STRETCHED VERTICALLY OR HORIZONTALLY?-->
-	<div id="main" class="vheight1">
-	  <div ><figure class="team_pics"><img class="team"  src="./img/Shenshen_CreativityLabs.jpg" alt="test_pic"/><figcaption>Shenshen Han, CTO</figcaption></figure></div>
-	  <div ><figure class="team_pics"><img class="team"  src="./img/MarcVideoStill.png" alt="test_pic"/><figcaption>Marc Bogonovich, Founder</figcaption></figure></div>
-	  <div ><figure class="team_pics"><img class="team"  src="./img/ScottTrepperColor_225px.png" alt="test_pic"/><figcaption>Scott Trepper, Head of UX</figcaption></figure></div>
-	  <div ><figure class="team_pics"><img class="team"  src="./img/lucasco_400px.png" alt="test_pic"/><figcaption>Lucas Lim, UX Designer</figcaption></figure></div>
-	  <div ><figure class="team_pics"><img class="team"  src="./img/shivikaco_400.png" alt="test_pic"/><figcaption>Shivika Thapar, UX Designer</figcaption></figure></div>
-	  <div ><figure class="team_pics"><img class="team"  src="./img/pattyco_400.png" alt="test_pic"/><figcaption>Patricia Wang, Language Pedagogy, Incubator Program</figcaption></figure></div>
-	  <div ><figure class="team_pics"><img class="team"  src="./img/nipurnco_400.png" alt="test_pic"/><figcaption>Nipurn Doshi, UX Designer</figcaption></figure></div>
-	</div>
-	<br><br><br>
+     <!--carousel code starts here!!-->
+   <div class="vheight1">
+  <div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
 
-	</section>
+      <div class="page-header">
+        <h3>Openwords Mobile Application</h3>
+        
+      </div>
 
+      <div class="carousel slide" id="myCarousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <ul class="thumbnails">
+              <li class="span3">
+                <div class="thumbnail">
+                  <a class="slider" href="#"><img src="./img/Shenshen_CreativityLabs.jpg" alt="test_pic"></a>
+                </div>
+                <div class="caption">
+                  <h4>Praesent commodo</h4>
+                  <p>Nullam Condimentum Nibh Etiam Sem</p>
+                  <a class=" slider btn btn-mini" href="#">&raquo; Read More</a>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <a class="slider"href="#"><img src="./img/ScottTrepperColor_225px.png" alt="test_pic"></a>
+                </div>
+                <div class="caption">
+                  <h4>Praesent commodo</h4>
+                  <p>Nullam Condimentum Nibh Etiam Sem</p>
+                  <a class=" slider btn btn-mini" href="#">&raquo; Read More</a>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <a class="slider" href="#"><img src="./img/ScottTrepperColor_225px.png" alt="test_pic"></a>
+                </div>
+                <div class="caption">
+                  <h4>Praesent commodo</h4>
+                  <p>Nullam Condimentum Nibh Etiam Sem</p>
+                  <a class="slider btn btn-mini" href="#">&raquo; Read More</a>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <a class="slider" href="#"><img src="./img/ScottTrepperColor_225px.png" alt="test_pic"></a>
+                </div>
+                <div class="caption">
+                  <h4>Praesent commodo</h4>
+                  <p>Nullam Condimentum Nibh Etiam Sem</p>
+                  <a class="slider btn btn-mini" href="#">&raquo; Read More</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- /Slide1 -->
+          
+          <!-- /Slide2 -->
+          <div class="item">
+            <ul class="thumbnails">
+              <li class="span3">
+                <div class="thumbnail">
+                  <a class="slider" href="#"><img src="./img/Shenshen_CreativityLabs.jpg" alt="test_pic"></a>
+                </div>
+                <div class="caption">
+                  <h4>Praesent commodo</h4>
+                  <p>Nullam Condimentum Nibh Etiam Sem</p>
+                  <a class=" slider btn btn-mini" href="#">&raquo; Read More</a>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <a class="slider"href="#"><img src="./img/ScottTrepperColor_225px.png" alt="test_pic"></a>
+                </div>
+                <div class="caption">
+                  <h4>Praesent commodo</h4>
+                  <p>Nullam Condimentum Nibh Etiam Sem</p>
+                  <a class=" slider btn btn-mini" href="#">&raquo; Read More</a>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <a class="slider" href="#"><img src="./img/ScottTrepperColor_225px.png" alt="test_pic"></a>
+                </div>
+                <div class="caption">
+                  <h4>Praesent commodo</h4>
+                  <p>Nullam Condimentum Nibh Etiam Sem</p>
+                  <a class="slider btn btn-mini" href="#">&raquo; Read More</a>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <a class="slider" href="#"><img src="./img/ScottTrepperColor_225px.png" alt="test_pic"></a>
+                </div>
+                <div class="caption">
+                  <h4>Praesent commodo</h4>
+                  <p>Nullam Condimentum Nibh Etiam Sem</p>
+                  <a class="slider btn btn-mini" href="#">&raquo; Read More</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- /Slide3 -->
+        </div>
 
+        <div class="control-box">
+          <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
+          <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
+        </div>
+        <!-- /.control-box -->
 
-		<!-- Javascript-->
+      </div>
+      <!-- /#myCarousel -->
+
+    </div>
+    <!-- /.span12 -->
+  </div>
+  <!-- /.row -->
+</div>
+</div>
+<!-- /.container -->
+
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 	</body>
