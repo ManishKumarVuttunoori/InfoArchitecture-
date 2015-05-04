@@ -1,24 +1,16 @@
-/*custom css file*/
-body.back{
-
-	background-image: url("../img/Loops-Backgund.jpg") !important; 
-}
+/*custom css file Manish Kumar Vuttunoori*/
 .video{
 position:relative;
 top:50px;
-
 margin-auto;
 padding-top:15px;
-
 }
 .vheight{
 top:30px;
-
 }
 .vheight1{
 position:relative;
 top:30px;
-
 }
 .starter
 {
@@ -31,8 +23,7 @@ top:30px;
 	height:45px;
 	padding:0px;
 	top:0px;
-	left: 20px;
-}
+	left: 20px;}
 .nav-color{
 	background-color: #6BB6A3;
 	font-weight: 500;
@@ -50,12 +41,8 @@ top:30px;
     animation-duration: 3s;
     animation-fill-mode: both;
 }
-
 	/*carousel css starts here */
-
-
 img { max-width:100%; }
-
 a.slider {
 	-webkit-transition: all 150ms ease;
 	-moz-transition: all 150ms ease;
@@ -69,8 +56,6 @@ a.slider {
         opacity: 0.6;
         text-decoration: none;
     }
-
-
 /* Container */
 .container-fluid {
     background: #FFFFFF;
@@ -78,10 +63,7 @@ a.slider {
     padding: 20px 40px 0;
     max-width: 900px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-}
-
-
-/* Page Header */
+}/* Page Header */
 .page-header {
     background: #f9f9f9;
     margin: -30px -40px 40px;
@@ -94,9 +76,6 @@ a.slider {
         line-height: 1rem;
         color: #000;
         }
-
-
-
 /* Thumbnail Box */
 .caption h4 {
     font-size: 1rem;
@@ -109,8 +88,6 @@ a.slider {
         .btn.btn-mini {
             font-size: 0.63rem;
             }
-
-
 /* Carousel Control */
 .control-box {
     text-align: right;
@@ -130,8 +107,6 @@ a.slider {
         height: 30px;
         width: 15px;
         }
-
-
 /* Footer */
 .footer {
     margin: auto;
@@ -206,3 +181,5 @@ li {
   margin-left: 15px;
 }
 /*Carousel team related code ends....!*/
+#galleria{height:320px;}
+.content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:72%;margin:20px auto;min-width:300px;}

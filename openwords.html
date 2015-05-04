@@ -16,8 +16,13 @@
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/custom.css" rel="stylesheet">
+		<link href="css/galleria.classic.css" rel="stylesheet">
 		<!--javascript goes here-->
 		<script src="js/respond.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+		<script src="js/galleria-1.4.2.min.js"></script>
+
 		<!-- Carousel Auto-Cycle-->
 	<script>	
   $(document).ready(function() {
@@ -45,11 +50,11 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right " id="nav">
-            <li class="current nav-font-color"><a href="#header">Home</a></li>
-            <li class="nav-font-color"><a href="#myCarousel">About Us</a></li>
-            <li class="nav-font-color"><a href="#service">Gallery</a></li>
-            <li class="nav-font-color"><a href="#about">Application</a></li>
-            <li class="nav-font-color"><a href="#contact">Contact Us</a></li>
+            <li class="current nav-font-color"><a class="navi" href="#header">Home</a></li>
+            <li class="nav-font-color"><a class="navi" href="#team_pics">About Us</a></li>
+            <li class="nav-font-color"><a class="navi" href="#service">Gallery</a></li>
+            <li class="nav-font-color"><a class="navi" href="#about">Application</a></li>
+            <li class="nav-font-color"><a class="navi" href="#contact">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -135,12 +140,12 @@
 	
 	<br>
      <!--carousel code starts here!!-->
-   <div class="vheight1">
+   <div class="vheight1" id="team_pics">
   <div class="container-fluid">
   <div class="row-fluid">
     <div class="span12">
 
-      <div class="page-header">
+      <div class="page-header" >
         <h3>Openwords Mobile Application</h3>
         
       </div>
@@ -257,8 +262,94 @@
 </div>
 </div>
 <!-- /.container -->
+<!--Mobile application gallery begins here!!!-->
+<div class="content container vheight1">
+        <h1>Galleria Classic Theme</h1>
+        <p>Demonstrating a basic gallery example.</p>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <!-- Adding gallery images. We use resized thumbnails here for better performance, but it’s not necessary -->
+
+        <div id="galleria">
+            
+            <a href="img/OpenDataWebsite.png">
+                <img 
+                    src="img/OpenDataWebsite.png",
+                    data-big="img/OpenDataWebsite.png"
+                    data-title="openwords application"
+                    data-description=""
+                >
+            </a>
+            <a href="img/OpenDataWebsite.png">
+                <img 
+                    src="img/OpenDataWebsite.png" width="500"
+                    data-big="img/OpenDataWebsite.png"
+                    data-title="openwords application"
+                    data-description=""
+                >
+            </a>
+            <a href="img/OpenDataWebsite.png">
+                <img 
+                    src="img/OpenDataWebsite.png",
+                    data-big="img/OpenDataWebsite.png"
+                    data-title="openwords application"
+                    data-description=""
+                >
+            </a>
+            <a href="img/OpenDataWebsite.png">
+                <img 
+                    src="img/OpenDataWebsite.png",
+                    data-big="img/OpenDataWebsite.png"
+                    data-title="openwords application"
+                    data-description=""
+                >
+            </a>
+            <a href="img/OpenDataWebsite.png">
+                <img 
+                    src="img/OpenDataWebsite.png",
+                    data-big="img/OpenDataWebsite.png"
+                    data-title="openwords application"
+                    data-description=""
+                >
+            </a>
+            <a href="img/OpenDataWebsite.png">
+                <img 
+                    src="img/OpenDataWebsite.png",
+                    data-big="img/OpenDataWebsite.png"
+                    data-title="openwords application"
+                    data-description=""
+                >
+            </a><a href="img/OpenDataWebsite.png">
+                <img 
+                    src="img/OpenDataWebsite.png",
+                    data-big="img/OpenDataWebsite.png"
+                    data-title="openwords application"
+                    data-description=""
+                >
+            </a>
+            <a href="img/OpenDataWebsite.png">
+                <img 
+                    src="img/OpenDataWebsite.png",
+                    data-big="img/OpenDataWebsite.png"
+                    data-title="openwords application"
+                    data-description=""
+                >
+            </a>
+        </div>
+
+        <p class="cred">Made by Manish Kumar Vuttunoori.</p>
+    </div>
+
+    <script>
+
+    // Load the classic theme
+    Galleria.loadTheme('js/galleria.classic.min.js');
+
+    // Initialize Galleria
+    Galleria.run('#galleria');
+
+    </script>
+
+	
 <script>$(document).ready(function() {
   function filterPath(string) {
     return string
@@ -266,7 +357,7 @@
       .replace(/(index|default).[a-zA-Z]{3,4}$/,'')  
       .replace(/\/$/,'');
   }
-  $('a[href*=#]').each(function() {
+  $('a.navi[href*=#]').each(function() {
     if ( filterPath(location.pathname) == filterPath(this.pathname)
     && location.hostname == this.hostname
     && this.hash.replace(/#/,'') ) {
