@@ -1,16 +1,35 @@
-/*custom css file Manish Kumar Vuttunoori*/
+/*custom css file*/
+body.back{
+
+	background-image: url("../img/Loops-Backgund.jpg") !important; 
+}
+
+.row h1 {
+    margin: 25px auto 55px;
+    font-weight: 300;
+    font-size: 35px;
+	text-align:center;
+	color: #3F6184;
+	font-family: "Georgia";
+}
+
+
 .video{
 position:relative;
 top:50px;
+
 margin-auto;
 padding-top:15px;
+
 }
 .vheight{
 top:30px;
+
 }
 .vheight1{
 position:relative;
-top:30px;
+top:1px;
+
 }
 .starter
 {
@@ -23,47 +42,48 @@ top:30px;
 	height:45px;
 	padding:0px;
 	top:0px;
-	left: 20px;}
+	left: 20px;
+}
 .nav-color{
 	background-color: #6BB6A3;
 	font-weight: 500;
-  font-family: "Comic Sans MS", cursive;
+  font-family: "Georgia", cursive;
   font-size: 1.38em;
   min-height:55px;
 }
 .navbar-default .navbar-nav>li>a {
   color: #ffffff;
 }
+
+
+
 .fadeInDown {
-    animation-name: fadeInDown;
+	animation-name: fadeInDown;
 }
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
 .animated {
     animation-duration: 3s;
     animation-fill-mode: both;
 }
-	/*carousel css starts here */
+
+.img-responsive {
+    width: 400px;
+    height: 300px;
+    text-align: left;
+    line-height: 400px;
+}
+
+.thumb {
+    margin-bottom: 30px;
+}
+
 img { max-width:100%; }
-a.slider {
-	-webkit-transition: all 150ms ease;
-	-moz-transition: all 150ms ease;
-	-ms-transition: all 150ms ease;
-	-o-transition: all 150ms ease;
-	transition: all 150ms ease; 
-	}
-    a.slider:hover {
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
-        filter: alpha(opacity=50); /* IE7 */
-        opacity: 0.6;
-        text-decoration: none;
-    }
-/* Container */
-.container-fluid {
-    background: #FFFFFF;
-    margin: 40px auto 10px;
-    padding: 20px 40px 0;
-    max-width: 900px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-}/* Page Header */
+
+/* Page Header */
 .page-header {
     background: #f9f9f9;
     margin: -30px -40px 40px;
@@ -76,37 +96,37 @@ a.slider {
         line-height: 1rem;
         color: #000;
         }
-/* Thumbnail Box */
-.caption h4 {
-    font-size: 1rem;
-    color: #444;
-    }
-    .caption p {
-        font-size: 0.75rem;
-        color: #999;
-        }
-        .btn.btn-mini {
-            font-size: 0.63rem;
-            }
-/* Carousel Control */
-.control-box {
-    text-align: right;
-    width: 100%;
-    }
-    .carousel-control{
-        background: #666;
-        border: 0px;
-        border-radius: 0px;
-        display: inline-block;
-        font-size: 34px;
-        font-weight: 200;
-        line-height: 18px;
-        opacity: 0.5;
-        padding: 4px 10px 0px;
-        position: static;
-        height: 30px;
-        width: 15px;
-        }
+		
+.app-left {
+    border-radius: 25px;
+    background: #3F6184;
+    padding: 20px; 
+    width: 1000px;
+    height: 500px;
+	margin: auto 30px 30px;
+	font-family: "Georgia";
+	 font-size: 15px;
+	 text-align:justify;
+	color: #ffffff;
+}
+
+
+	
+.team-desc {
+	margin: auto 30px 30px;
+    font-size: 18px;
+	text-align:justify;
+	color: #3F6184;
+	font-family: "Georgia";
+}
+
+.caption-content single-image p {
+	 font-size: 15px;
+	text-align:center;
+	color: #3F6184;
+	font-family: "Georgia";
+}
+	
 /* Footer */
 .footer {
     margin: auto;
@@ -134,52 +154,3 @@ a.slider {
     word-break: break-all;
     }
 }
-/* Carousel team related css data*/
-[class*="span"] {
-  float: left;
-  min-height: 1px;
-  margin-left: 20px;
-}
-
-.row-fluid [class*="span"] {
-  display: block;
-  float: left;
-  width: 100%;
-  min-height: 30px;
-  margin-left: 2.127659574468085%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.row-fluid [class*="span"]:first-child {
-  margin-left: 0;
-}
-
-.thumbnails {
-  margin-left: -20px;
-  list-style: none;
-}
-
-.row-fluid .thumbnails {
-  margin-left: 0;
-}
-
-.span3 {
-  width: 220px;
-}
-
-.row-fluid .span3 {
-  width: 23.404255319148934%;
-}
-li {
-  line-height: 20px;
-}
-
-.thumbnails>li {
-  float: left;
-  margin-bottom: 20px;
-  margin-left: 15px;
-}
-/*Carousel team related code ends....!*/
-#galleria{height:320px;}
-.content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:72%;margin:20px auto;min-width:300px;}

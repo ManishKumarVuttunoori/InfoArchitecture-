@@ -1,4 +1,4 @@
-<!--open words web page-->
+
 <html>
 	<head>
 		<!--meta tags go here-->
@@ -16,22 +16,18 @@
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/custom.css" rel="stylesheet">
-		<link href="css/galleria.classic.css" rel="stylesheet">
-		<link href="css/animate.css" rel="stylesheet">
+    <link href="css/animate.css" rel ="stylesheet">
 		<!--javascript goes here-->
 		<script src="js/respond.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-		<script src="js/galleria-1.4.2.min.js"></script>
-
-		<!-- Carousel Auto-Cycle-->
-	<script>	
-  $(document).ready(function() {
-    $('.carousel').carousel({
-      interval: 6000
-    })
-  });
-  </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+	  margin: auto; 
+	  alignment-adjust:before-edge;
+  }
+  </style>
 	</head>
 	<body >
 		
@@ -52,7 +48,7 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right " id="nav">
             <li class="current nav-font-color"><a class="navi" href="#header">Home</a></li>
-            <li class="nav-font-color"><a class="navi" href="#team_pics">About Us</a></li>
+            <li class="nav-font-color"><a class="navi" href="#myCarousel">About Us</a></li>
             <li class="nav-font-color"><a class="navi" href="#service">Gallery</a></li>
             <li class="nav-font-color"><a class="navi" href="#about">Application</a></li>
             <li class="nav-font-color"><a class="navi" href="#contact">Contact Us</a></li>
@@ -61,15 +57,15 @@
       </div>
       
     </nav>
-
-		<section id="video-kickstarter" class=" container video" >
+    
+    
+		<section id="video-kickstarter" class="container video" >
 			<header class="row">
-				<div class="col-xs-12  text-center animated fadeInDown">
-				<!--Open Words title logo-->
-					<a href="http://www.openwords.com">
-						<img src="img/openwords_logo_c_oranged_h_97.png" alt="open words logo"/>
-			    	</a>
-				</div>
+            <div class="container">
+            <div class="col-lg-12">
+                <h1 class="page-header">Open language learning app for the world! </h1>
+             </div>
+             </div> 
 			</header>
 			</section>
 		
@@ -83,7 +79,7 @@
 				</div>
 				<div class=" col-lg-3 col-md-3  col-md-offset-6 col-lg-offset-3 visible-lg visible-md animated fadeInRight">
 					<!--Image place holder-->
-					<a href="http://www.kickstarter.com">
+					<a href="https://www.kickstarter.com/projects/279739136/openwords-foreign-language-learning-app-with-open">
 						<img src="img/Kickstarter-Image-aside.jpg" alt="kick-starter" width='75%'/>
 				   </a>
 
@@ -97,260 +93,268 @@
 				</div>
 			</div>
 			</div>
-		
-		<article class="container video">
-
-			<section id= "Mission" class="row">
-			<br>
-			<br>
-			<header>
-			<h2>Openwords is a Social Enterprise</h2>
+  <article class="container video">
+        <section id= "About" class=" video" >
+			<header class="row">
+            <div>
+            <div class="col-lg-12">
+                <h1 class="page-header">Openwords is a social enterprise</h1>
+             </div>
+             </div> 
 			</header>
-			<p>
-			Openwords is a "triple-bottom-line" for-profit. This means Openwords has social goals in addition to financial goals. Openwords app will be open source and free.
+            <div >
+            <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-			<br><br>
-			Openwords socials goals are:
-			</p>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
 
-			 <ul style="list-style-type:disc">
-			  <li>Free educational material.</li>
-			  <li>Open educational material.</li>
-			  <li>Diverse educational material for diverse communities, offering flexible learning.</li>
-			</ul>
-
-			</section>
-			<section id="App" class="row">
-			<br>
-			<br>
-			<header>
-			<h2>Mobile App</h2></header>
-
-			<p>
-			The Openwords design has different learning modules. We have single word problems like hearing, review, self-evaluate recognition, type-evaluation. We also have multiword and simple sentence translation problems in development, and a handwriting learning module for Chinese in development (utilizing the Wikimedia Stroke Order project!). The Openwords design is extensible. As we (or the community) develop new learning modules or games, we can add them in.
-			</p>
-			<p>
-			The Openwords app has a minimalist design. We believe languages themselves are beautiful. We also want to bring the Kickstarter community into the design process as we refine our current design. We're happy to share more about our design concepts; we've thought deeply about these issues, but the process is open to you.
-			</p>
-			<p>
-			Importantly the learner (and teacher) will be free to follow a curricula or express autonomy, starting in the simple ability to choose the words they want to learn.
-			</p>
-			</section>
-	</article>
-
-	
-	<br>
-     <!--carousel code starts here!!-->
-   <div class="vheight1" id="team_pics">
-  <div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span12">
-
-      <div class="page-header" >
-        <h3>Openwords Mobile Application</h3>
-        
+      <div class="item active">
+        <img src="img/carousel-img1.png" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Provide flexible learning for diverse communities</h3>
+          <p>Openwords has collected content for more than 1000 languages. We can do this because Openwords has open source educational content. This means we can mine massive pre-existing educational content built by the open computing community!</p>
+        </div>
       </div>
 
-      <div class="carousel slide" id="myCarousel">
-        <div class="carousel-inner">
-          <div class="item active">
-            <ul class="thumbnails">
-              <li class="span3">
-                <div class="thumbnail">
-                  <a class="slider" href="#"><img src="./img/Shenshen_CreativityLabs.jpg" alt="test_pic"></a>
-                </div>
-                <div class="caption">
-                  <h4>Praesent commodo</h4>
-                  <p>Nullam Condimentum Nibh Etiam Sem</p>
-                  <a class=" slider btn btn-mini" href="#">&raquo; Read More</a>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <a class="slider"href="#"><img src="./img/ScottTrepperColor_225px.png" alt="test_pic"></a>
-                </div>
-                <div class="caption">
-                  <h4>Praesent commodo</h4>
-                  <p>Nullam Condimentum Nibh Etiam Sem</p>
-                  <a class=" slider btn btn-mini" href="#">&raquo; Read More</a>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <a class="slider" href="#"><img src="./img/ScottTrepperColor_225px.png" alt="test_pic"></a>
-                </div>
-                <div class="caption">
-                  <h4>Praesent commodo</h4>
-                  <p>Nullam Condimentum Nibh Etiam Sem</p>
-                  <a class="slider btn btn-mini" href="#">&raquo; Read More</a>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <a class="slider" href="#"><img src="./img/ScottTrepperColor_225px.png" alt="test_pic"></a>
-                </div>
-                <div class="caption">
-                  <h4>Praesent commodo</h4>
-                  <p>Nullam Condimentum Nibh Etiam Sem</p>
-                  <a class="slider btn btn-mini" href="#">&raquo; Read More</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- /Slide1 -->
-          
-          <!-- /Slide2 -->
-          <div class="item" >
-            <ul class="thumbnails">
-              <li class="span3">
-                <div class="thumbnail">
-                  <a class="slider" href="#"><img src="./img/Shenshen_CreativityLabs.jpg" alt="test_pic"></a>
-                </div>
-                <div class="caption">
-                  <h4>Praesent commodo</h4>
-                  <p>Nullam Condimentum Nibh Etiam Sem</p>
-                  <a class=" slider btn btn-mini" href="#">&raquo; Read More</a>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <a class="slider"href="#"><img src="./img/ScottTrepperColor_225px.png" alt="test_pic"></a>
-                </div>
-                <div class="caption">
-                  <h4>Praesent commodo</h4>
-                  <p>Nullam Condimentum Nibh Etiam Sem</p>
-                  <a class=" slider btn btn-mini" href="#">&raquo; Read More</a>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <a class="slider" href="#"><img src="./img/ScottTrepperColor_225px.png" alt="test_pic"></a>
-                </div>
-                <div class="caption">
-                  <h4>Praesent commodo</h4>
-                  <p>Nullam Condimentum Nibh Etiam Sem</p>
-                  <a class="slider btn btn-mini" href="#">&raquo; Read More</a>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <a class="slider" href="#"><img src="./img/ScottTrepperColor_225px.png" alt="test_pic"></a>
-                </div>
-                <div class="caption">
-                  <h4>Praesent commodo</h4>
-                  <p>Nullam Condimentum Nibh Etiam Sem</p>
-                  <a class="slider btn btn-mini" href="#">&raquo; Read More</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- /Slide3 -->
+      <div class="item">
+        <img src="img/carousel-img1.png" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Always have open Data</h3>
+          <p>Openwords app and educational content will be free & open source. This means everyone owns the Openwords educational content.</p>
         </div>
-
-        <div class="control-box">
-          <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
-          <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
-        </div>
-        <!-- /.control-box -->
-
       </div>
-      <!-- /#myCarousel -->
+    
+      <div class="item">
+        <img src="img/carousel-img1.png" alt="Flower" width="460" height="345">
+        <br>
+        <div class="carousel-caption">
+        <h3>Remain economically viable, will be free</h3>
+          <p>Openwords is building revenue models that respect learner privacy, respect the sacredness of education, and sustain our open data purpose. For example, we could connect learners to potential language related job opportunities.To achieve these goals, Openwords is collaborating with Creative Commons on an interesting project called the "Open business model canvas."
+		</p>
+        </div>
+      </div>
 
-    </div>
-    <!-- /.span12 -->
+    
   </div>
-  <!-- /.row -->
 </div>
 </div>
-<!-- /.container -->
-<!--Mobile application gallery begins here!!!-->
-<div class="content container vheight1">
-        <h1>Galleria Classic Theme</h1>
-        <p>Demonstrating a basic gallery example.</p>
+</section>
 
-        <!-- Adding gallery images. We use resized thumbnails here for better performance, but it’s not necessary -->
 
-        <div id="galleria">
+   <section id= "Application" class="container video" >
+			<header class="row">
+            <div>
+            <div class="col-lg-12">
+                <h1 class="page-header">Our app and features</h1>
+             </div>
+             </div> 
+			</header>
+            <div class="app-left" style="width:40%; float:left">
+             <p>
+			<b>Openwords Application</b>
+            <br>
+            <br>
+
+The Openwords design has different learning modules. We have single word problems like hearing, review, self-evaluate recognition, type-evaluation. We also have multiword and simple sentence translation problems in development, and a handwriting learning module for Chinese in development (utilizing the Wikimedia Stroke Order project!). The Openwords design is extensible. As we (or the community) develop new learning modules or games, we can add them in.
+<br>
+<br>
+Importantly the learner (and teacher) will be free to follow a curricula or express autonomy, starting in the simple ability to choose the words they want to learn.
+<br>
+<br>
+The Openwords app has a minimalist design. We believe languages themselves are beautiful. We also want to bring the Kickstarter community into the design process as we refine our current design. We're happy to share more about our design concepts; we've thought deeply about these issues, but the process is open to you. 
+			</p>
+            </div>
+
+            <div style="width: 80%; float:right">
             
-            <a href="img/OpenDataWebsite.png">
-                <img 
-                    src="img/OpenDataWebsite.png",
-                    data-big="img/OpenDataWebsite.png"
-                    data-title="openwords application"
-                    data-description=""
-                >
-            </a>
-            <a href="img/OpenDataWebsite.png">
-                <img 
-                    src="img/OpenDataWebsite.png" width="500"
-                    data-big="img/OpenDataWebsite.png"
-                    data-title="openwords application"
-                    data-description=""
-                >
-            </a>
-            <a href="img/OpenDataWebsite.png">
-                <img 
-                    src="img/OpenDataWebsite.png",
-                    data-big="img/OpenDataWebsite.png"
-                    data-title="openwords application"
-                    data-description=""
-                >
-            </a>
-            <a href="img/OpenDataWebsite.png">
-                <img 
-                    src="img/OpenDataWebsite.png",
-                    data-big="img/OpenDataWebsite.png"
-                    data-title="openwords application"
-                    data-description=""
-                >
-            </a>
-            <a href="img/OpenDataWebsite.png">
-                <img 
-                    src="img/OpenDataWebsite.png",
-                    data-big="img/OpenDataWebsite.png"
-                    data-title="openwords application"
-                    data-description=""
-                >
-            </a>
-            <a href="img/OpenDataWebsite.png">
-                <img 
-                    src="img/OpenDataWebsite.png",
-                    data-big="img/OpenDataWebsite.png"
-                    data-title="openwords application"
-                    data-description=""
-                >
-            </a><a href="img/OpenDataWebsite.png">
-                <img 
-                    src="img/OpenDataWebsite.png",
-                    data-big="img/OpenDataWebsite.png"
-                    data-title="openwords application"
-                    data-description=""
-                >
-            </a>
-            <a href="img/OpenDataWebsite.png">
-                <img 
-                    src="img/OpenDataWebsite.png",
-                    data-big="img/OpenDataWebsite.png"
-                    data-title="openwords application"
-                    data-description=""
-                >
-            </a>
+            </div>
+			</section>
+            
+    <section id= "Team" class="container video" >
+			<header class="row">
+            <div>
+            <div class="col-lg-12">
+                <h1 class="page-header">We have an awesome team!</h1>
+                <p class="team-desc"> People having been working with us coming from different fields of                  informatics, design, language, management and many others.
+                <br>
+                <br>
+                <b>All of the money raised in our Kickstarter campaign will be used to support team members.</b>
+                </p>
+            </div>
+            </div>
+			</header>
+    
+    <div class="row">
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/Marc.png" alt="marc">
+                    <figcaption>
+                    <div class="caption-content single_image">
+                    <p>Marc Bogonovich<br>
+                       Founder
+            		</p>
+                    </div>
+                    </figcaption>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/ShenShen.jpg" alt="shen">
+                    <figcaption>
+                    <div class="caption-content single_image">
+                    <p>Shenshen Han<br>
+                       CTO
+            		</p>
+                    </div>
+                    </figcaption>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/ScottTrepper.png" alt="scott">
+                    <figcaption>
+                    <div class="caption-content single_image">
+                    <p>Scott Trepper<br>
+                       UX Head
+            		</p>
+                    </div>
+                    </figcaption>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/patty.png" alt="patty">
+                    <figcaption>
+                    <div class="caption-content single_image">
+                    <p>Patricia Wang<br>
+                       Language Incubator
+            		</p>
+                    </div>
+                    </figcaption>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/SisiXie.png" alt="sisi">
+                    <figcaption>
+                    <div class="caption-content single_image">
+                    <p>Sisi Xie<br>
+                       Outreach
+            		</p>
+                    </div>
+                    </figcaption>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/BesTaylor.png" alt="bes">
+                    <figcaption>
+                    <div class="caption-content single_image">
+                    <p>Bes White<br>
+                       Outreach and Design
+            		</p>
+                    </div>
+                    </figcaption>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/lucas.png" alt="lucas">
+                    <figcaption>
+                    <div class="caption-content single_image">
+                    <p>Lucas Lim<br>
+                       UX Designer
+            		</p>
+                    </div>
+                    </figcaption>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/nipurn.png" alt="nipurn">
+                    <figcaption>
+                    <div class="caption-content single_image">
+                    <p>Nipurn Doshi<br>
+                       UX Designer
+            		</p>
+                    </div>
+                    </figcaption>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/shivika.png" alt="shivika">
+                    <figcaption>
+                    <div class="caption-content single_image">
+                    <p>Shivika Thapar<br>
+                       UX Designer
+            		</p>
+                    </div>
+                    </figcaption>
+                </a>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/kitten.png" alt="kitty">
+                    <figcaption>
+                    <div class="caption-content single_image">
+                    <p>YOU!<br>
+                       Help us improve! What language are you interested in? 
+            		</p>
+                    </div>
+                    </figcaption>
+                </a>
+            </div>
+            
         </div>
 
-        <p class="cred">Made by Manish Kumar Vuttunoori.</p>
+        
+
+    
+    </section>
+	</article>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <h2>Contact Us</h2>
+  <form class="form-horizontal" role="form">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name">Your name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
     </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Your email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="comments">Comments:</label>
+      <div class="col-sm-10">          
+        <textarea rows="11" name="comments" class="form-control" id="comments" placeholder="Enter your comments">
+        </textarea>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
 
-    <script>
-
-    // Load the classic theme
-    Galleria.loadTheme('js/galleria.classic.min.js');
-
-    // Initialize Galleria
-    Galleria.run('#galleria');
-
-    </script>
-
-	
 <script>$(document).ready(function() {
   function filterPath(string) {
     return string
@@ -374,6 +378,7 @@
     }
   });
 });</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
