@@ -4,7 +4,7 @@ body.back{
 	background-image: url("../img/Loops-Backgund.jpg") !important; 
 }
 
-.row h1 {
+.row h2 {
     margin: 25px auto 55px;
     font-weight: 300;
     font-size: 35px;
@@ -13,6 +13,9 @@ body.back{
 	font-family: "Georgia";
 }
 
+.adjust{
+	width:75%;
+}
 
 .video{
 position:relative;
@@ -45,7 +48,7 @@ top:1px;
 	left: 20px;
 }
 .nav-color{
-	background-color: #6BB6A3;
+	background-color: #3F6184;
 	font-weight: 500;
   font-family: "Georgia", cursive;
   font-size: 1.38em;
@@ -75,7 +78,17 @@ top:1px;
     height: 300px;
     text-align: left;
     line-height: 400px;
+	
 }
+
+.Team row {
+	background-color:#3F6184;
+}
+.figc{
+	font-family: "Georgia", cursive;
+    color:#3F6184;
+}
+	
 
 .thumb {
     margin-bottom: 30px;
@@ -97,12 +110,10 @@ img { max-width:100%; }
         color: #000;
         }
 		
-.app-left {
+.app-left, .app-right{
     border-radius: 25px;
     background: #3F6184;
     padding: 20px; 
-    width: 1000px;
-    height: 500px;
 	margin: auto 30px 30px;
 	font-family: "Georgia";
 	 font-size: 15px;
@@ -127,7 +138,7 @@ img { max-width:100%; }
 	font-family: "Georgia";
 }
 	
-/* Footer */
+/* Footer 
 .footer {
     margin: auto;
     width: 100%;
@@ -140,8 +151,14 @@ img { max-width:100%; }
         }
         p.right  { 
             float: right; 
-            }
+            }*/
 
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
 
 /* Mobile Only */
 @media (max-width: 767px) {
